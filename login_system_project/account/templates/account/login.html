@@ -1,0 +1,39 @@
+{% extends 'users/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="main-container">
+
+        <div class="form-section-login">
+
+          <form class="" action="" method="post">
+
+            {% csrf_token %}
+
+            <fieldset class='form-group'>
+
+              <legend class='mb-4 legend'>Login Form</legend>
+
+              {{form|crispy}}
+
+            </fieldset>
+
+            <div>
+
+              <button type="submit" name="button" class="btn btn-info btn-lg">Login</button>
+
+            </div>
+
+            <div class="mt-4">
+              Unable to login <a href="#"> Forgot Password </a>
+            </div>
+
+          </form>
+
+        </div>
+
+    </div>
+
+{% endblock %}

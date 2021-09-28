@@ -1,0 +1,35 @@
+{% extends 'users/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="main-container">
+
+        <div class="form-section mt-5">
+
+          <form class="" action="" method="post">
+
+            <fieldset class='form-group'>
+
+              <legend>Registration Form</legend>
+
+              {% csrf_token %}
+
+              {{form|crispy}}
+
+            </fieldset>
+
+            <div>
+
+              <button type="submit" name="button" class="btn btn-info btn-lg">Register</button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+    </div>
+
+{% endblock %}
