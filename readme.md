@@ -11,3 +11,4 @@ This project is a demo of basic Login System where user can:
 Note:
 
 This is not a responsive Login System.
+I have given the Forgot Password option in the login page but it will not going to work as I ahve not added that functionality.
